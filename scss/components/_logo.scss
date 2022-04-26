@@ -1,15 +1,8 @@
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font (700, 24px, 28px);
     letter-spacing: 0.03em;
     color: var(--accept-item-text-color);
-    
-    &.logo-top {
-        margin-right: 93px;
-        padding: 24px 0;
-    }
 }
 
 .logo__studio_black {
@@ -18,4 +11,19 @@
 
 .logo__studio_white {
     color: var(--light-theme-background);
+}
+
+@media screen and (min-width: 768px) {
+    .logo.logo-top {
+        margin-right: 88px;
+        padding: 26px 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .logo.logo-top {
+        @include font (700, 26px, 31px);
+        margin-right: 93px;
+    }
 }

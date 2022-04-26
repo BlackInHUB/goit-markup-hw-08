@@ -1,40 +1,89 @@
+// MOBILE
+
 .section.hero {
-    max-width: 1600px;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile@1x.jpg);
     background-size: cover;
     background-color: #c4c4c4;
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section.hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-mobile@2x.jpg);
+    }
+}
+
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font (900, 26px, 42px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--middle-theme-background);
+    color: var(--light-theme-background);
     margin-bottom: 30px;
 }
 
 .modal-btn {
     font-family: inherit;
     background-color: var(--accept-item-text-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font (700, 16px, 30px)
     letter-spacing: 0.06em;
     color: var(--light-theme-background);
     cursor: pointer;
     padding: 10px 32px;
     border-radius: 4px;
     border: 1px solid transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    &:hover,
-    &:focus {
-        background-color: #188ce8;
+// TABLET
+
+@media screen and (min-width: 768px) {
+    .section.hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-tablet@1x.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section.hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bg-tablet@2x.jpg);
+        }
+    }
+}
+
+// DESKTOP
+
+@media screen and (min-width: 1200px) {
+    .section.hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-desktop@1x.jpg);
+        padding: 200px 0;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .section.hero {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/hero-bg-desktop@2x.jpg);
+        }
+    }
+
+    .hero-title {
+        @include font (900, 44px, 60px);
+    }
+
+    .modal-btn {
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: #188ce8;
+        }
     }
 }

@@ -1,0 +1,23 @@
+.clients-list {
+    display: flex;
+}
+
+.clients-list__item-link {
+    @extend %flex-align-justify;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--light-icon-color);
+    border-radius: 4px;
+    fill: var(--light-icon-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accept-item-text-color);
+        fill: var(--accept-item-text-color);
+    }
+}
+
+.clients-list__item:not(:last-child) {
+    margin-right: 30px;
+}

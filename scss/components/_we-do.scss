@@ -1,0 +1,32 @@
+.section.we-do {
+    padding-top: 0;
+}
+
+.we-do-list {
+    display: flex;
+}
+
+.we-do-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.we-do-list__item-container {
+    position: relative;
+}
+
+.we-do-list__item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 27px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-theme-background);
+    background: rgba(47, 48, 58, 0.8);
+}

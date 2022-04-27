@@ -2,7 +2,7 @@
 
 .section.hero {
     margin: 0 auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mobile.jpg);
     background-size: cover;
     background-color: #c4c4c4;
     padding: 118px 0;
@@ -43,7 +43,7 @@
 @media screen and (min-width: 768px) {
     .section.hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg-tablet@1x.jpg);
+        url(../images/hero-bg-tablet.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -61,7 +61,7 @@
 @media screen and (min-width: 1200px) {
     .section.hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero-bg-desktop@1x.jpg);
+        url(../images/hero-bg-desktop.jpg);
         padding: 200px 0;
     }
 

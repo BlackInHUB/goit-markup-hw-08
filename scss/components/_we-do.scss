@@ -1,3 +1,13 @@
+// MOBILE & TABLET
+
+@media screen and (max-width: 1199px) {
+    .section.we-do {
+        display: none;
+    }
+}
+
+// DESKTOP
+
 .section.we-do {
     padding-top: 0;
 }

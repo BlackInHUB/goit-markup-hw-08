@@ -194,10 +194,20 @@
         color: var(--secondary-text-color-light-background);
     }
 
-
     .contacts-list__item-icon {
         margin-right: 8px;
         fill: var(--secondary-text-color-light-background);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .tablet-email-link {
+        // display: block;
+        margin-top: 20px;
+    }
+
+    .tablet-phone-link {
+        margin-bottom: 20px;
     }
 }
 

@@ -26,14 +26,14 @@
                 </ul>
             </nav>
             <ul class="contacts-list list">
-                <li class="contacts-list__item"><a class="contacts-list__item-link link" href="tel:+380961111111"><svg
+                <li class="contacts-list__item"><a class="contacts-list__item-link link" href="mailto:info@devstudio.com"><svg
                             class="contacts-list__item-icon" width="16" height="12">
                             <use href="./images/sprite.svg#email"></use>
-                        </svg>+38 096 111 1111</a></li>
-                <li class="contacts-list__item"><a class="contacts-list__item-link link"
-                        href="mailto:info@devstudio.com"><svg class="contacts-list__item-icon" width="10" height="16">
-                            <use href="./images/sprite.svg#smartphone"></use>
                         </svg>info@devstudio.com</a></li>
+                <li class="contacts-list__item"><a class="contacts-list__item-link link"
+                        href="tel:+380961111111"><svg class="contacts-list__item-icon" width="10" height="16">
+                            <use href="./images/sprite.svg#smartphone"></use>
+                        </svg>+38 096 111 1111</a></li>
             </ul>
             <button class="mobile-menu-btn" type="button" data-menu-open>
                 <svg class="mobile-menu-btn__icon" width="40" height="40">
@@ -52,23 +52,26 @@
                     </li>
                     <li class="mobile-menu-nav-list__item"><a class="mobile-menu-nav-list__item-link link" href="">Контакты</a></li>
                 </ul>
-                <ul class="mobile-menu-contacts-list list">
-                    <li class="mobile-menu-contacts-list__item"><a class="mobile-menu-contacts-list__item-link link phone" href="tel:+380961111111">
-                            +38 096 111 1111</a></li>
-                    <li class="mobile-menu-contacts-list__item"><a class="mobile-menu-contacts-list__item-link link"
-                            href="mailto:info@devstudio.com">
-                            info@devstudio.com</a></li>
-                </ul>
-                <ul class="mobile-menu-social-list list">
-                    <li class="mobile-menu-social-list__item"><a href="https://instagram.com" class="mobile-menu-social-list__item-link link"
-                            target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li class="mobile-menu-social-list__item"><a href="https://twitter.com" class="mobile-menu-social-list__item-link link"
-                            target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li class="mobile-menu-social-list__item"><a href="https://facebook.com" class="mobile-menu-social-list__item-link link"
-                            target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li class="mobile-menu-social-list__item"><a href="https://linkedin.com" class="mobile-menu-social-list__item-link link"
-                            target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                </ul>
+                <div class="mobile-menu__contacts-container">
+                    <ul class="mobile-menu-contacts-list list">
+                        <li class="mobile-menu-contacts-list__item"><a class="mobile-menu-contacts-list__item-link link phone"
+                                href="tel:+380961111111">
+                                +38 096 111 1111</a></li>
+                        <li class="mobile-menu-contacts-list__item"><a class="mobile-menu-contacts-list__item-link link"
+                                href="mailto:info@devstudio.com">
+                                info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu-social-list list">
+                        <li class="mobile-menu-social-list__item"><a href="https://instagram.com"
+                                class="mobile-menu-social-list__item-link link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li class="mobile-menu-social-list__item"><a href="https://twitter.com"
+                                class="mobile-menu-social-list__item-link link" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                        <li class="mobile-menu-social-list__item"><a href="https://facebook.com"
+                                class="mobile-menu-social-list__item-link link" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li class="mobile-menu-social-list__item"><a href="https://linkedin.com"
+                                class="mobile-menu-social-list__item-link link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
                 <button class="mobile-menu__close-btn" type="button" data-menu-close>
                     <svg class="mobile-menu__close-icon" width="40" height="40">
                         <use href="./images/sprite.svg#burger-menu-close-icon"></use>
@@ -441,7 +444,7 @@
     </main>
 
 <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-flex">
             <div class="footer-contacts">
                 <a class="logo link" href="./index.html">Web<span class="logo__studio_white">Studio</span></a>
@@ -509,7 +512,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 <!-- /FOOTER -->
 
 <!-- MODAL WINDOW -->

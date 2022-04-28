@@ -26,11 +26,12 @@
 
 .we-do-list__item-overlay {
     position: absolute;
+    @extend %flex-align-justify;
     bottom: 0;
     left: 0;
     z-index: 100;
     width: 100%;
-    padding: 27px 0;
+    height: 70px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;

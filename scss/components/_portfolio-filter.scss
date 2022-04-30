@@ -1,7 +1,6 @@
 .filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .filter-list__item:not(:last-child) {
@@ -32,3 +31,25 @@
     }
 }
 
+@media screen and (max-width: 767px) {
+    .filter-list {
+        flex-wrap: wrap;
+    }
+
+    .filter-list__item:not(:nth-child(-n + 2)) {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter-list {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter-list {
+        margin-bottom: 50px;
+    }
+}

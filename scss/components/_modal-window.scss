@@ -21,14 +21,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
+    width: 100%;
     background: var(--light-theme-background);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+    .modal-window {
+        max-width: 450px;
+    }
+    
 }
 
 .modal-window__close-btn {
@@ -137,7 +143,9 @@
 }
 
 .modal-form__checkbox-lable {
-    @extend %flex-align-justify;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     @include font (400, 12px, 14px);
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light-background);
@@ -199,10 +207,11 @@
     }
 }
 
+// DESKTOP
+
 @media screen and (min-width: 1200px) {
     .modal-window {
         width: 528px;
-        height: 581px;
     }
 
     .modal-wondow__title {

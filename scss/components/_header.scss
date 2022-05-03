@@ -101,10 +101,12 @@
     .mobile-menu-social-list {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: -10px;
     }
     
     .mobile-menu-social-list__item:not(:last-child) {
         margin-right: 10px;
+        margin-bottom: 10px;
     }
     
     .mobile-menu-social-list__item:not(:first-child)::before {

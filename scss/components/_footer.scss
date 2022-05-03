@@ -89,9 +89,14 @@
     }
 }
 
+@media screen and (max-width: 1199px) {
+    .footer-contacts-social-container {
+        margin-bottom: 60px;
+    }
+}
+
 @media screen and (max-width: 767px) {
-    .footer-contacts,
-    .footer-social {
+    .footer-contacts {
         margin-bottom: 60px;
     }
 
